@@ -4,6 +4,8 @@ import { enableScreens } from 'react-native-screens';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import * as Screens from './screens/Screens';
+import { StartScreen } from './screens/StartScreen';
+import { Results } from './screens/Results';
 
 const Stack = createStackNavigator();
 enableScreens();
@@ -15,6 +17,7 @@ export default function App() {
       headerMode="none"
       detachInactiveScreens
       >
+        <Stack.Screen name="Start Screen" component={StartScreen} />
         <Stack.Screen name="Q1" component={Screens.Q1} />
         <Stack.Screen name="Q2" component={Screens.Q2} />
         <Stack.Screen name="Q3" component={Screens.Q3} />
@@ -44,7 +47,7 @@ export default function App() {
         <Stack.Screen name="Q27" component={Screens.Q27} />
         <Stack.Screen name="Q28" component={Screens.Q28} />
         <Stack.Screen name="Q29" component={Screens.Q29} />
-        <Stack.Screen name="Results" component={Screens.Results} />
+        <Stack.Screen name="Results" component={Results} />
       </Stack.Navigator>
     </NavigationContainer>
   );
