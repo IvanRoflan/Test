@@ -1,7 +1,5 @@
 import 'react-native-gesture-handler';
 import React from 'react';
-import {Text, View, TouchableOpacity} from 'react-native';
-import { styles } from '../styles/styles';
 import { QuestionCard } from './QScreen';
 
 export const Q1 = ({ navigation, route }) => {
