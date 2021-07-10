@@ -14,7 +14,7 @@ export const StartScreen = ({ navigation }) => {
             <TouchableOpacity
             style={styles.home}
             onPress={() => {
-                navigation.navigate('Q1', {
+                navigation.navigate('Question', {
                 ext: 0,
                 neur:0,
                 lies:0
